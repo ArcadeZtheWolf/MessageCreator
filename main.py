@@ -1,0 +1,12 @@
+def msgmk():
+    file = open("message.txt", 'r')
+    sendto=input("Name of person: ")
+    theysend=input("They send to: ")
+    theysendadrss=input("They send to address: ")
+    text=file.read()
+    message=text.format(sendto, theysend, theysendadrss)
+    print (message)
+    print(" ")
+    random=input("Press return to restart, or Ctrl+C to exit")
+    msgmk()
+msgmk()
